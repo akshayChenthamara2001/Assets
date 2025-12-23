@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.assets.AssetsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.780 s -- in com.example.assets.AssetsApplicationTests
