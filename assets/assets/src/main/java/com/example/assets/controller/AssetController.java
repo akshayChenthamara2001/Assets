@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/assests")
@@ -15,7 +16,7 @@ public class AssetController {
 @Autowired
     private AssetService assetService;
 @GetMapping("/getAsset/{id}")
-public Asset getAssestbyId(@PathVariable String id){
+public Optional<Asset> getAssestbyId(@PathVariable String id){
     return assetService.getAsset(id);
 }
 

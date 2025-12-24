@@ -1,7 +1,18 @@
 package com.example.assets.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
 
+    @Id
+    private Long id;
+
+    @Column(nullable = false)
     private String userName;
     private String password;
     private Boolean authenticated;
@@ -10,6 +21,17 @@ public class User {
         this.userName = userName;
         this.password = password;
         this.authenticated = authenticated;
+    }
+
+    public User() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getUserName() {
